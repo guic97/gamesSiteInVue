@@ -1,7 +1,5 @@
 # new_project
 
-<<<<<<< HEAD
-Em desenvolvimento
-=======
-Em desenvolvimento
->>>>>>> 2f30f7394875ccc7155dfbcdd85fa89a528520ce
+- Este projeto tem objetivo de treino, principalmente da parte de lógica.
+- No projeto haverá a presença de mini games. 
+

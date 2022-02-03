@@ -21,6 +21,11 @@ const routes = [
     path: '/sixtrys',
     name: 'sixTrys',
     component: () => import('../views/sixTrys.vue')
+  },
+  {
+    path: '/rockpaperscissors',
+    name: 'rockPaperScissors',
+    component: () => import('../views/rockPaperScissors.vue')
   }
 ]
 

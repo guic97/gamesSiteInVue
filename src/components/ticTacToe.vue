@@ -1,17 +1,18 @@
 <template>
-  <div class="main">
-    <p>Teste</p>
-    <p>Teste</p>
-    <p>Teste</p>
+  <div class="mainContainer">
+    <h2>Tic Tac Toe</h2>
+    <div>
+      
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name:"ticTacToe"
+  name:"ticTacToe",
 }
 </script>
 
 <style scoped>
-
+  
 </style>

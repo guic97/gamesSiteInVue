@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <tic-tac-toe/>
   </div>
 </template>

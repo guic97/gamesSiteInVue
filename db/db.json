@@ -1,0 +1,24 @@
+{
+  "sixTrysEasy": [
+    {
+      "letters":"cama",
+      "id": 1
+    },
+    {
+      "letters":"pelo",
+      "id": 2
+    },
+    {
+      "letters":"amar",
+      "id": 3
+    },
+    {
+      "letters":"lama",
+      "id": 4
+    },
+    {
+      "letters":"teto",
+      "id": 5
+    }   
+  ]
+}
