@@ -2,7 +2,7 @@
   <div class="mainContainer">
     <h2>Tic Tac Toe</h2>
     <div>
-      
+      <!-- soon -->
     </div>
   </div>
 </template>

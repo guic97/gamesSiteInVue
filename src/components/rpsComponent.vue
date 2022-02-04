@@ -3,15 +3,19 @@
     <h2>Rock Paper Scissors</h2>
     <div>
       <button v-show="play===false" type="confirm" @click="play=true">Play</button>
+      
+      <!-- choose div -->
       <div v-show="play===true && result==''">
         <div><h1>Choose one:</h1></div>
-        <div  id="rpsContainer">
+        <div  id="rpsContainer"> 
           <div class="item rock " @click="rpsGame('rock')">rock</div>
           <div class="item paper" @click="rpsGame('paper')">paper</div>
           <div class="item scissors" @click="rpsGame('scissors')">scissors</div>
         </div>
         <button type="confirm" @click="play=false">Cancel</button>
       </div>
+
+      <!-- result div -->
       <div v-show="result!=''" id="divResult">
         <div><h1>Result:</h1></div>
         <div id="outputContainer">
@@ -42,11 +46,11 @@ export default {
   name:"rpsComponent",
   data(){
     return{
-      play:false,
-      random:['rock', 'paper', 'scissors'],
-      result:'',
-      oneRandom:'',
-      selected:'',
+      play:false, // show and hide the divs
+      random:['rock', 'paper', 'scissors'], // Elements to random
+      result:'', // result output
+      oneRandom:'', // gets a random value from 'random' 
+      selected:'', // use it to select a option
     }
   },
   methods:{
@@ -61,10 +65,10 @@ export default {
         }
       this.changeResultColor();
     },
-    sortRandom: function() {
+    sortRandom: function() { // randomise function
       this.oneRandom = this.random[Math.floor(Math.random()*this.random.length)];
     },
-    changeResultColor: function() {
+    changeResultColor: function() { // change result color function
       if (this.result=='win') {
         document.getElementById("resultId").style.backgroundColor='green';
       }else if (this.result=='lose') {
@@ -145,6 +149,8 @@ export default {
     justify-content: center;
     align-items: center;
   }
+
+  /* putting images in the result div */
   .rock{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFF8prUe82TNl8F1D2WxLH_h16QxpmVDc6TQ&usqp=CAU');
   }

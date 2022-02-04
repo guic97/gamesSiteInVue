@@ -2,6 +2,7 @@
   <div id="sixTrysDiv">
     <div class="mainContainer">
       <h2>SIX TRYS</h2>
+      <!-- soon -->
       <div id="words">
         <div v-show='final===true' class="wordContainer" v-for="letter in word" :key="letter.id">
           <div class="letter">{{letter}}</div>
@@ -22,21 +23,21 @@ export default {
   name:'sixTrysComponent',
   data(){
     return{
-      wordBackend:[],
+      wordBackend:[], // words in the backend / JSON
 
-      word:'',
-      guess:[],
-      final:true,
+      word:'', // word to guess
+      guess:[], // guess the word
+      final:true, // the end game
     }
   },
   methods: {
-    async getData(){
+    async getData(){ // getting the data in the backend
       const req = await fetch("http://localhost:3000/sixTrysEasy/")
       const data = await req.json()
       this.wordBackend = data
     },
   },
-  mounted() {
+  mounted() { // activate the function
     this.getData()
   }
 }
